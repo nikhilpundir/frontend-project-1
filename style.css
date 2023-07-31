@@ -286,5 +286,9 @@ html,body{
         background-color: black;
         color: white;
     }
+    #textabout{
+    width: 20rem;
+        
+    }
     
 }
