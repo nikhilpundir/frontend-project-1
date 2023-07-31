@@ -7,6 +7,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    
 }
 #minicircle{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -19,14 +20,7 @@ html,body{
     mix-blend-mode: difference;
 }
 
-.bounding{
-    width: fit-content;
-    overflow: hidden;
-}
 
-.bounding .boundingelem{
-    transform: translateY(100%);
-}
 
 #main{
     width: 100%;
@@ -58,7 +52,6 @@ html,body{
 
 #heading{
     margin-top: 90px;
-     
 }
 
 #heading h1{
@@ -68,18 +61,26 @@ html,body{
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1;
+    /* width: 100%; */
 }
 
-#heading #secondh1{
-    margin-left: 230px ;
 
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+    /* overflow-x:; */
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
 }
 
 .blocktext{
     display: flex;
     flex-direction: column;
     align-items: end;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 80%;
 }
 
 .blocktext h5{
@@ -192,7 +193,7 @@ html,body{
 }
 
 #textabout{
-    width: 25rem;
+    width: 100%;
 }
 #textabout h5{
     text-transform: uppercase;
@@ -203,6 +204,7 @@ html,body{
 #textabout p{
     line-height: 1.7;
     margin-bottom: 30px;
+    padding: 10px;
 }
 #about img{
     width: 200px;
@@ -252,7 +254,8 @@ html,body{
 }
 #footerright{
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 #footer a{
     text-transform: uppercase;
@@ -263,6 +266,9 @@ html,body{
 }
 
 @media (max-width:1200px){
+    #hero{
+        height: 90vh;
+    }
     #about{
         display: flex;
         flex-direction: column;
@@ -287,8 +293,16 @@ html,body{
         color: white;
     }
     #textabout{
-/*     width: 20rem; */
-        
-    }
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    #about{
+            padding: 0vw 30px;
+            margin-bottom: 10vh;
+        }
+    #subscribe{
+            margin: 20px 0px;
+        }
+            
     
 }
