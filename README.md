@@ -1,2 +1,2 @@
-# frontend-project-1
-This is a Frontend web development project number 1
+# Portfolio Project
+This is a Frontend web development project
