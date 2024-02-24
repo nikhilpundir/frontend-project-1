@@ -178,6 +178,10 @@ html,body{
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+.elem a{
+    text-decoration: none;
+    color: white ;
+}
 #about{
     display: flex;
     align-items: center;
